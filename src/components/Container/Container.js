@@ -26,10 +26,9 @@ class Container extends Component {
         return (
             <div className="container shadow p-3 mb-5 bg-white rounded mt-4" id="bg">
                <Title title={this.state.apod.title}  /> 
-               <Picture url={this.state.apod.hdurl} />
+               <Picture url={this.state.apod.url} />
                <Information copyright={this.state.apod.copyright} date={this.state.apod.date} />
                <Explaination explaination={this.state.apod.explanation} />
-               <p className="m-5 text-right"><b>Powered by NASA & React 2018&copy;</b></p>
                <div className="row text-center">
                 <div className="col-md-6">
                     <img className="rounded-circle h-100 w-50" alt="NASA Logo" src="https://icarus.upc.edu/en/figs/logos/logo-nasa.jpg/@@images/image.jpeg" />
@@ -38,6 +37,7 @@ class Container extends Component {
                 <img className="rounded-circle h-100 w-50" alt="React Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS19mnk_0xgAW6pJhXIL4UwQnIif5AsgVGLOWOjSiXtDbKv3P-w" />
                 </div>
                </div>
+               <p className="m-5 text-center"><b>Powered by NASA & React 2018&copy; Copyright</b></p>
             </div>
         );
     }
