@@ -27,7 +27,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "electron": "^3.0.6",
+    "electron": "^18.3.7",
     "gh-pages": "^2.0.1"
   }
 }
